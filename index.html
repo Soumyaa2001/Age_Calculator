@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Age Calculator</h1>
+        <details>
+          <summary>
+            Click Here For More Details!
+          </summary>
+          <p>Calculate your age in years, months, and days.</p>
+          <p>Find out how many days are left until your next birthday.</p>
+          <p>Enter your date of birth and click "Calculate".</p>
+          <p>Note: The date format is DD-MM-YYYY.</p>
+        </details>
+        
+    </header>
+
+    <div class="theme-toggle">
+        <button id="themeButton">🌙 Dark Mode</button>
+    </div>
+
+    <div class="container">        
+        <p>Enter Your Date of Birth</p>
+
+        <div class="input-section">
+            <input type="date" id="dob">
+            <button onclick="calculateAge()">Calculate</button>
+            <button onclick="resetFields()">Reset</button>
+            <p id="error-message"></p>
+        </div>
+
+        <div class="result-section">
+            <div class="result-box"><p id="year">--</p><h5>Years</h5></div>  
+            <div class="result-box"><p id="month">--</p><h5>Months</h5></div>
+            <div class="result-box"><p id="day">--</p><h5>Days</h5></div>
+            </div>
+
+        <div class="birthday-section">
+            <h3>🎂 Birthday Countdown 🎂</h3>
+            <p id="birthdayCountdown">-- days left</p>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+          <a href="mailto:ghoshsoumyaneel@gmail.com" style="color: rgb(77, 114, 248);">ghoshsoumyaneel@gmail.com</a>
+  
+          <div class="social">
+  
+            <a href="https://www.instagram.com/soumyaneelghosh/" target="_blank"  rel="noopener noreferrer">
+              <img src="instagram_icon.svg" alt="Instagram"/>
+            </a>
+  
+            <a href="https://github.com/Soumyaa2001" target="_blank"  rel="noopener noreferrer">
+              <img src="github-icon.svg" alt="GitHub" />
+            </a>
+  
+            <a href="#" target="_blank"  rel="noopener noreferrer">
+              <img src="icons8-twitterx-250.svg" alt="Twitter" />
+            </a>
+  
+            <a href="https://www.linkedin.com/in/soumyaneelghosh/" target="_blank"  rel="noopener noreferrer">
+              <img src="linkedin-icon.svg" alt="Linkedin"/>
+            </a>
+          </div>
+            <p>
+              &copy Copyright 2025 | Designed & Developed by
+              <strong> Soumyaneel Ghosh </strong> | All Rights Are Reserved.
+            </p>
+          
+        </div>
+      </footer>
+
+</body>
+</html>
